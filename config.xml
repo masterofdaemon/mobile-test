@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <preference name='phonegap-version' value='cli-5.1.1' />
+  <hook type="before_prepare" src="scripts/buildPolymerApp.js" />
     <name>HelloCordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
