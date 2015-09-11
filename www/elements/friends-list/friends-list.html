@@ -20,17 +20,17 @@
   <script>
     Polymer({
       is: 'friends-list',
-      ready: function() {
-        var client = document.querySelector('xmpp-client');
-        var flupp = function(event) {
-          var status = event.detail;
-          console.log((status) ? 'Wow, I\'m connected!' : 'I\'m offline');
-        };
-        client.addEventListener('connect', flupp);
-        client.addEventListener('constate', function(evt) {
-          console.log('status is ' + evt.detail);
-        });
-      }
+      // ready: function() {
+      //   var client = document.querySelector('xmpp-client');
+      //   var flupp = function(event) {
+      //     var status = event.detail;
+      //     console.log((status) ? 'Wow, I\'m connected!' : 'I\'m offline');
+      //   };
+      //   client.addEventListener('connect', flupp);
+      //   client.addEventListener('constate', function(evt) {
+      //     console.log('status is ' + evt.detail);
+      //   });
+      // }
     });
   </script>
 </dom-module>
